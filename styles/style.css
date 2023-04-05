@@ -41,6 +41,7 @@
   color: #007aff;
 }
 .header_btn {
+  height: fit-content;
   background-color: #007aff;
   border-radius: 10px;
   color: #ffffff;
@@ -74,6 +75,7 @@
   font-size: 18px;
   color: #505056;
   font-weight: 400;
+  line-height: 28px;
 }
 .intro_content_btn {
   display: flex;
@@ -95,7 +97,7 @@
   font-size: 16px;
 }
 .intro_content_btn:hover {
-  color: #007aff;
+  transform: translateY(-10px);
 }
 .intro_content_btns {
   display: flex;
@@ -184,6 +186,7 @@
   margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24.8px;
 }
 .organization_content_types {
   margin-top: 48px;
@@ -207,6 +210,7 @@
 .organization_content_type_info {
   font-weight: 400;
   font-size: 16px;
+  line-height: 24.8px;
 }
 
 .info {
@@ -218,6 +222,9 @@
 }
 .info_content {
   flex-basis: 60%;
+}
+.info_content_text {
+  line-height: 24.8px;
 }
 .info_content_list {
   margin-top: 48px;
@@ -244,6 +251,7 @@
   color: #000000;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24.8px;
 }
 .info_content_list_item img {
   width: 10%;
@@ -297,6 +305,7 @@
   font-size: 16px;
   font-weight: 400;
   margin-top: 24px;
+  line-height: 24.8px;
 }
 .plans_cards {
   margin-top: 80px;
@@ -327,6 +336,7 @@
   font-weight: 400;
   padding-bottom: 29px;
   border-bottom: 1px solid #9fcdff;
+  line-height: 24.8px;
 }
 .plans_card_info {
   margin-top: 32px;
@@ -384,11 +394,17 @@
   flex-basis: 48%;
   box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
   border-radius: 4px;
+  cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.3s;
 }
+.testimonials_card a {
+  text-decoration: none;
+}
 .testimonials_card_text {
   margin-top: 24px;
+  color: #505056;
+  line-height: 24.8px;
 }
 .testimonials_card_profile {
   margin-top: 24px;
@@ -428,6 +444,7 @@
   margin-top: 32px;
   font-size: 21px;
   color: #ffffff;
+  line-height: 33px;
 }
 .download_input {
   width: 40%;
@@ -446,14 +463,14 @@
   color: #ffffff;
   border-radius: 10px;
   padding: 16px 28px;
-  border: 1px solid transparent;
+  margin-left: 21px;
+  border: none;
   transition: all 0.3s;
   cursor: pointer;
 }
 .download_btn:hover {
   background-color: #ffffff;
   color: #fbaf5b;
-  border: 1px solid #fbaf5b;
 }
 .download_terms {
   margin-top: 21px;
@@ -477,17 +494,15 @@
 }
 .footer_list li {
   padding-bottom: 32px;
-  cursor: pointer;
   transition: all 0.3s;
 }
-.footer_list li:hover {
+.footer_list li:not(:first-child):hover {
+  cursor: pointer;
   color: #007aff;
 }
 .footer_list_title {
   font-size: 20px;
   font-weight: 500;
-}
-.footer_list_title:hover {
   cursor: default;
 }
 .footer_links {
