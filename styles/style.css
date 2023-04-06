@@ -17,6 +17,9 @@
   background-color: #f3f9fd;
   background-size: cover;
 }
+.header_burger {
+  display: none;
+}
 .header_logo {
   cursor: pointer;
   flex-basis: 10%;
@@ -80,24 +83,12 @@
 .intro_content_btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 7px;
-  color: #ffffff;
-  background-color: #000000;
-  padding: 7px 13px;
-  border-radius: 7px;
-  border: 2px solid #a6a6a6;
+  width: 190px;
   cursor: pointer;
   transition: all 0.3s;
 }
-.intro_content_btn_text h5 {
-  font-weight: 400;
-}
-.intro_content_btn_text_name {
-  font-size: 16px;
-}
 .intro_content_btn:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 .intro_content_btns {
   display: flex;
@@ -219,6 +210,7 @@
 }
 .info .container {
   display: flex;
+  align-items: center;
 }
 .info_content {
   flex-basis: 60%;
@@ -533,6 +525,412 @@
 }
 .footer_links_sm img:hover {
   background: #007aff;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header {
+    padding: 30px 75px;
+  }
+  .intro img {
+    width: 55%;
+  }
+  .intro_content_btn img {
+    width: fit-content;
+  }
+  .footer .container {
+    gap: 11%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .header {
+    padding: 25px 60px;
+  }
+  .header_nav_links {
+    gap: 8%;
+  }
+  .header_btn {
+    padding: 12px 20px;
+  }
+  .intro_content_btn img {
+    width: 80%;
+  }
+  .intro_content_title {
+    font-size: 48px;
+  }
+  .intro_content_btns {
+    flex-direction: column;
+  }
+  .organization_content_title {
+    font-size: 40px;
+  }
+  .info {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .plans {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+  .plans_title {
+    padding-top: 60px;
+    font-size: 40px;
+  }
+  .plans_card {
+    padding: 25px 16px;
+  }
+  .plans_card_price {
+    font-size: 38px;
+  }
+  .plans_card_btn {
+    padding: 15px 25px;
+  }
+  .plans_card_description {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+  }
+  .plans_card_info {
+    margin-bottom: 18px;
+  }
+  .testimonials {
+    margin: 60px 0;
+  }
+  .testimonials_cards {
+    margin-top: 60px;
+    gap: 25px;
+  }
+  .testimonials_card {
+    padding: 20px;
+  }
+  .testimonials_card_text {
+    margin-top: 12px;
+  }
+  .testimonials_card_profile {
+    margin-top: 12px;
+  }
+  .download {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: 768px;
+  }
+  .header {
+    padding: 25px;
+  }
+  .header_logo {
+    width: 75px;
+  }
+  .header_nav_links {
+    gap: 5%;
+  }
+  .header_btn {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .header {
+    justify-content: flex-end;
+  }
+  .header_burger {
+    display: block;
+    width: 20px;
+  }
+  .header_logo {
+    display: none;
+  }
+  .header_nav {
+    display: none;
+  }
+  .header_btn {
+    display: none;
+  }
+  .intro {
+    padding-bottom: 60px;
+  }
+  .intro_content_title {
+    font-size: 32px;
+  }
+  .intro_content_text {
+    font-size: 16px;
+  }
+  .intro_content_btn img {
+    width: 60%;
+  }
+  .trusted {
+    margin: 50px 0;
+  }
+  .description {
+    margin: 60px 0;
+  }
+  .description_card {
+    padding: 12px;
+  }
+  .description_card img {
+    width: 30%;
+  }
+  .description_card_title {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .description_card_info {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .organization .container {
+    padding: 60px 0;
+    flex-direction: column;
+  }
+  .organization_content_title {
+    font-size: 32px;
+  }
+  .organization_content_text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .organization_content_types {
+    margin-top: 30px;
+  }
+  .organization_content_type {
+    gap: 10px;
+  }
+  .organization_content_type_ttile {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .organization_content_type_info {
+    font-size: 14px;
+  }
+  .organization_img {
+    width: 40%;
+  }
+  .info {
+    margin: 40px 0;
+  }
+  .info_content_text {
+    line-height: 20px;
+  }
+  .info_content_list {
+    margin-top: 20px;
+  }
+  .info_content_list_item {
+    gap: 10px;
+  }
+  .info_content_list_item_title {
+    font-size: 18px;
+  }
+  .info_content_list_item_text {
+    margin-top: 10px;
+  }
+  .info_content_btn {
+    margin-top: 30px;
+  }
+  .plans_title {
+    padding-top: 40px;
+    font-size: 26px;
+    width: auto;
+  }
+  .plans_text {
+    width: auto;
+  }
+  .plans_card {
+    padding: 15px;
+  }
+  .plans_card_price {
+    font-size: 26px;
+  }
+  .plans_card_price span {
+    font-size: 14px;
+  }
+  .plans_card_description {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .plans_card_info {
+    margin: 10px 0;
+  }
+  .plans_card_info li {
+    gap: 8px;
+    font-size: 14px;
+  }
+  .plans_card_btn {
+    padding: 10px;
+  }
+  .testimonials {
+    margin: 40px 0;
+  }
+  .testimonials_title {
+    font-size: 32px;
+  }
+  .testimonials_text {
+    margin-top: 10px;
+  }
+  .testimonials_cards {
+    margin-top: 25px;
+    gap: 15px;
+  }
+  .download {
+    padding: 40px 0;
+  }
+  .download_title {
+    font-size: 40px;
+  }
+  .download_text {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .download_input {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .download_btn {
+    padding: 12px 20px;
+  }
+  .download_terms {
+    margin-top: 18px;
+  }
+  .footer {
+    padding-top: 40px;
+  }
+  .footer .container {
+    gap: 8%;
+  }
+  .footer_list li {
+    padding-bottom: 16px;
+    font-size: 14px;
+  }
+  .footer_list_title {
+    font-size: 18px;
+  }
+  .footer_links {
+    margin: 0 30px;
+    padding: 30px 0;
+  }
+  .footer_links_copyright {
+    font-size: 14px;
+  }
+  .footer_links_sm {
+    gap: 15px;
+  }
+  .footer_links_sm img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .container {
+    max-width: 375px;
+  }
+  .hedaer {
+    padding: 10px;
+  }
+  .intro {
+    padding-bottom: 30px;
+  }
+  .intro_content_title {
+    font-size: 24px;
+  }
+  .intro_content_text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .intro_content_btns {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .intro_content_btn {
+    width: 125px;
+  }
+  .intro_content_btn img {
+    width: 40%;
+  }
+  .trusted {
+    margin: 20px 0;
+  }
+  .trusted_title {
+    font-size: 18px;
+  }
+  .trusted_icons {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .trusted_icons img {
+    width: fit-content;
+  }
+  .description {
+    margin: 20px 0;
+  }
+  .description_title {
+    font-size: 22px;
+  }
+  .description_mini-text {
+    font-size: 14px;
+  }
+  .description_cards {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .description_card img {
+    width: 20%;
+  }
+  .organization .container {
+    padding-top: 20px;
+  }
+  .organization_content_title {
+    font-size: 22px;
+  }
+  .organization_content_text {
+    margin-top: 10px;
+    line-height: 18px;
+  }
+  .organization_content_types {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .organization_content_type_title {
+    padding-bottom: 10px;
+  }
+  .organization_content_type img {
+    width: 25%;
+  }
+  .info .container {
+    flex-direction: column;
+  }
+  .info_content_btn {
+    margin-top: 20px;
+  }
+  .plans_cards {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .testimonials_cards {
+    flex-direction: column;
+  }
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    max-width: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,9 @@
   padding: 30px 100px;
   background-color: #f3f9fd;
   background-size: cover;
+  &_burger {
+    display: none;
+  }
   &_logo {
     cursor: pointer;
     flex-basis: 10%;
@@ -81,25 +84,11 @@
     &_btn {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 7px;
-      color: #ffffff;
-      background-color: #000000;
-      padding: 7px 13px;
-      border-radius: 7px;
-      border: 2px solid #a6a6a6;
+      width: 190px;
       cursor: pointer;
       transition: all 0.3s;
-      &_text {
-        h5 {
-          font-weight: 400;
-        }
-        &_name {
-          font-size: 16px;
-        }
-      }
       &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
       }
     }
     &_btns {
@@ -225,6 +214,7 @@
   margin-bottom: 80px;
   .container {
     display: flex;
+    align-items: center;
   }
   &_content {
     flex-basis: 60%;
@@ -545,5 +535,478 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header {
+    padding: 30px 75px;
+  }
+  .intro {
+    img {
+      width: 55%;
+    }
+    &_content {
+      &_btn {
+        img {
+          width: fit-content;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      gap: 11%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .header {
+    padding: 25px 60px;
+    &_nav {
+      &_links {
+        gap: 8%;
+      }
+    }
+    &_btn {
+      padding: 12px 20px;
+    }
+  }
+
+  .intro {
+    &_content {
+      &_btn {
+        img {
+          width: 80%;
+        }
+      }
+      &_title {
+        font-size: 48px;
+      }
+      &_btns {
+        flex-direction: column;
+      }
+    }
+  }
+  .organization {
+    &_content {
+      &_title {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .info {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  .plans {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    &_title {
+      padding-top: 60px;
+      font-size: 40px;
+    }
+    &_card {
+      padding: 25px 16px;
+      &_price {
+        font-size: 38px;
+      }
+      &_btn {
+        padding: 15px 25px;
+      }
+      &_description {
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+      }
+      &_info {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .testimonials {
+    margin: 60px 0;
+    &_cards {
+      margin-top: 60px;
+      gap: 25px;
+    }
+    &_card {
+      padding: 20px;
+      &_text {
+        margin-top: 12px;
+      }
+      &_profile {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .download {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: 768px;
+  }
+  .header {
+    padding: 25px;
+    &_logo {
+      width: 75px;
+    }
+    &_nav {
+      &_links {
+        gap: 5%;
+      }
+    }
+    &_btn {
+      padding: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .header {
+    justify-content: flex-end;
+    &_burger {
+      display: block;
+      width: 20px;
+    }
+    &_logo {
+      display: none;
+    }
+    &_nav {
+      display: none;
+    }
+    &_btn {
+      display: none;
+    }
+  }
+  .intro {
+    padding-bottom: 60px;
+    &_content {
+      &_title {
+        font-size: 32px;
+      }
+      &_text {
+        font-size: 16px;
+      }
+      &_btn {
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+  .trusted {
+    margin: 50px 0;
+  }
+  .description {
+    &_card {
+      padding: 12px;
+      img {
+        width: 30%;
+      }
+      &_title {
+        margin-top: 12px;
+        font-size: 20px;
+      }
+      &_info {
+        font-size: 14px;
+        margin-top: 12px;
+      }
+    }
+    margin: 60px 0;
+  }
+  .organization {
+    .container {
+      padding: 60px 0;
+      flex-direction: column;
+    }
+    &_content {
+      &_title {
+        font-size: 32px;
+      }
+      &_text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &_types {
+        margin-top: 30px;
+      }
+      &_type {
+        gap: 10px;
+        &_ttile {
+          padding-bottom: 10px;
+          font-size: 18px;
+        }
+        &_info {
+          font-size: 14px;
+        }
+      }
+    }
+    &_img {
+      width: 40%;
+    }
+  }
+  .info {
+    margin: 40px 0;
+    &_content {
+      &_text {
+        line-height: 20px;
+      }
+      &_list {
+        margin-top: 20px;
+        &_item {
+          gap: 10px;
+          &_title {
+            font-size: 18px;
+          }
+          &_text {
+            margin-top: 10px;
+          }
+        }
+      }
+      &_btn {
+        margin-top: 30px;
+      }
+    }
+  }
+  .plans {
+    &_title {
+      padding-top: 40px;
+      font-size: 26px;
+      width: auto;
+    }
+    &_text {
+      width: auto;
+    }
+    &_card {
+      padding: 15px;
+      &_price {
+        font-size: 26px;
+        span {
+          font-size: 14px;
+        }
+      }
+      &_description {
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
+      &_info {
+        margin: 10px 0;
+        li {
+          gap: 8px;
+          font-size: 14px;
+        }
+      }
+      &_btn {
+        padding: 10px;
+      }
+    }
+  }
+  .testimonials {
+    margin: 40px 0;
+    &_title {
+      font-size: 32px;
+    }
+    &_text {
+      margin-top: 10px;
+    }
+    &_cards {
+      margin-top: 25px;
+      gap: 15px;
+    }
+  }
+  .download {
+    padding: 40px 0;
+    &_title {
+      font-size: 40px;
+    }
+    &_text {
+      margin-top: 18px;
+      font-size: 16px;
+    }
+    &_input {
+      margin-top: 10px;
+      padding: 10px;
+    }
+    &_btn {
+      padding: 12px 20px;
+    }
+    &_terms {
+      margin-top: 18px;
+    }
+  }
+  .footer {
+    padding-top: 40px;
+    .container {
+      gap: 8%;
+    }
+    &_list {
+      li {
+        padding-bottom: 16px;
+        font-size: 14px;
+      }
+      &_title {
+        font-size: 18px;
+      }
+    }
+    &_links {
+      margin: 0 30px;
+      padding: 30px 0;
+      &_copyright {
+        font-size: 14px;
+      }
+      &_sm {
+        gap: 15px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .container {
+    max-width: 375px;
+  }
+  .hedaer {
+    padding: 10px;
+  }
+  .intro {
+    padding-bottom: 30px;
+    &_content {
+      &_title {
+        font-size: 24px;
+      }
+      &_text {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &_btns {
+        margin-top: 15px;
+        gap: 15px;
+      }
+      &_btn {
+        width: 125px;
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .trusted {
+    margin: 20px 0;
+    &_title {
+      font-size: 18px;
+    }
+    &_icons {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: fit-content;
+      }
+    }
+  }
+  .description {
+    margin: 20px 0;
+    &_title {
+      font-size: 22px;
+    }
+    &_mini-text {
+      font-size: 14px;
+    }
+    &_cards {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    &_card {
+      img {
+        width: 20%;
+      }
+    }
+  }
+
+  .organization {
+    .container {
+      padding-top: 20px;
+    }
+    &_content {
+      &_title {
+        font-size: 22px;
+      }
+      &_text {
+        margin-top: 10px;
+        line-height: 18px;
+      }
+      &_types {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 10px;
+      }
+      &_type {
+        &_title {
+          padding-bottom: 10px;
+        }
+        img {
+          width: 25%;
+        }
+      }
+    }
+  }
+  .info {
+    .container {
+      flex-direction: column;
+    }
+    &_content {
+      &_btn {
+        margin-top: 20px;
+      }
+    }
+  }
+  .plans {
+    &_cards {
+      margin-top: 50px;
+      flex-direction: column;
+    }
+  }
+  .testimonials {
+    &_cards {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    .container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .container {
+    max-width: 350px;
   }
 }
